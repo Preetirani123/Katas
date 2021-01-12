@@ -1,7 +1,7 @@
 const whereCanIPark = function (spots, vehicle) {
   
   for (var i = 0; i < spots.length; i++){
-      for (var j = 0; j < spots.length; j++){
+      for (var j = 0; j < spots[i].length; j++){
         if (vehicle == "regular" && spots[i][j] == "R"){
           return [j,i];
         }
