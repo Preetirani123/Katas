@@ -4,16 +4,6 @@ const organizeInstructors = function(instructors) {
 
   for (const instructor of instructors) {
 
-    if (output[instructor.course]) {
-      output[instructor.course].push(instructor.name);
-    } 
-
-    
-    else {
-      output[instructor.course] = [instructor.name];
-    }
-
-  }
 
   return output;
 };
